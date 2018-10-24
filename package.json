@@ -1,0 +1,51 @@
+{
+  "name": "framework-stb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doc": "gulp typedoc",
+    "start:pro": "yarn webpack --config=webpack.config.ts --mode=production && yarn gulp init-file",
+    "start:dev": "yarn webpack --config=webpack.config.ts --mode=development --watch",
+    "start:ser": "yarn gulp init-file && yarn http-server dist -c-0 -o -p 8080 -s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/442331311/framework_stb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/442331311/framework_stb"
+  },
+  "homepage": "https://github.com/442331311/framework_stb",
+  "devDependencies": {
+    "@types/node": "^10.5.8",
+    "@types/webpack": "^4.4.9",
+    "awesome-typescript-loader": "^5.2.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "es3ify-loader": "^0.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-watch": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
+    "http-server": "^0.11.1",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^4.4.2",
+    "ts-node": "^7.0.0",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.9.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {}
+}

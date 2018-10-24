@@ -1,0 +1,22 @@
+
+// 元素焦点样式
+.focus(@sacle:1.02, @border_radius:3px, @color: #fff, @shadow: #fff) {
+    
+    border: 2px solid @color;
+    box-shadow: 0px 0px 13px @shadow;
+    -ms-box-shadow: 0px 0px 13px @shadow;
+    -webkit-box-shadow: 0px 0px 13px @shadow;
+
+    border-radius: @border_radius;
+    -ms-border-radius: @border_radius;
+    -webkit-border-radius: @border_radius;
+    
+    transform: scale(@sacle);
+    -ms-transform:scale(@sacle);
+    -webkit-transform:scale(@sacle);
+
+    z-index: 10;
+}
+
+// @rate:1.2;
+@rate:1;

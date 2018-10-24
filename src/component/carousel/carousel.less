@@ -1,0 +1,45 @@
+.carousel-component{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 634px;
+    height: 358px;
+    border: 1px solid red;
+    overflow: hidden;
+
+    &>img{ 
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 634px;
+        height: 358px;
+    }
+    ul{
+        position: absolute;
+        left: 0px;
+        top:260px;
+        width: 655px;
+        height: 95px;
+        background-image: url("../../component/carousel/images/ico_bg.png");
+
+        li{
+            float: left;
+            width: 135px;
+            height: 89px;
+            margin-right: 5px;
+
+            &.active{
+                background-image: url("../../component/carousel/images/car_act.png");
+            }
+
+            &>img{
+                position: absolute;
+                left: 5px;
+                top: 15px;
+                width: 127px;
+                height: 70px;
+                border: 1px solid red;
+            }
+        }
+    }
+}
