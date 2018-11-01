@@ -13,7 +13,10 @@ export let Config = {
     debugMode: true,
     pageName: {
     },
-    mainCookieName: "stbTokenCookieName"
+    /**
+     * 项目唯一标识
+     */
+    mainCookieName: "***_token_cookiename"
 }
 
 // let host = window.location.host;
@@ -52,20 +55,20 @@ export let Config = {
 //     }
 // }
 
-// export function getApiAddress(keyWorlds: string, ...args: string[]) {
-//     let reg = /\{.*?\}/g;
+export function getApiAddress(keyWorlds: string, ...args: string[]) {
+    let reg = /\{.*?\}/g;
 
-//     let url: string = Config.apiPath[keyWorlds];
+    let url: string = Config.apiPath[keyWorlds];
 
-//     if (url) {
-//         let arr;
-//         arr = url.match(reg)
-//         for (let i = 0; i < args.length; i++) {
-//             url = url.replace(arr[i], args[i]);
-//         }
-//         return `${Config.serviceDomain}/${url}`;
-//     }
-// }
+    if (url) {
+        let arr;
+        arr = url.match(reg)
+        for (let i = 0; i < args.length; i++) {
+            url = url.replace(arr[i], args[i]);
+        }
+        return `${Config.serviceDomain}/${url}`;
+    }
+}
 
 // /**
 //  * 图片裁剪

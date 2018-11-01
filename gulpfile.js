@@ -9,7 +9,7 @@ var gulpWatch = require('gulp-watch')
 //     .pipe(gulp.dest('./dist'))
 // })
 gulp.task('init-file', function () {
-  return gulp.src(['./src/package/**/*','!./src/package/images/**/*'])
+  return gulp.src(['./src/package/**/*', '!./src/package/images/**/*'])
     .pipe(gulp.dest('./dist'))
 })
 
@@ -25,12 +25,12 @@ gulp.task('page', () => {
 
   if (0 !== fileName.indexOf('--')) {
     return new Error('错误：请输入页面名称 -pageName')
-  }else {
+  } else {
     fileName = fileName.substr(2, fileName.length)
 
     return gulp.src('./src/template/**/*')
-      .pipe(rename({basename: fileName}))
-      .pipe(replace('/index', '/' + fileName))
+      // .pipe(rename({basename: fileName}))
+      .pipe(replace('default', fileName))
       .pipe(gulp.dest('./src/pages/' + fileName))
   }
 })
