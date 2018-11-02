@@ -1,4 +1,4 @@
-import "./default.less";
+import "./index.less";
 import { BasePage, PageRegister } from "../../framework/component/page";
 import { ParseUrl } from "../../framework/basic/parseUrl";
 import { PageSource } from "../../framework/component/pageSource";
