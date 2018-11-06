@@ -1,0 +1,3 @@
+[submodule "src/framework"]
+	path = src/framework
+	url = https://github.com/442331311/framework.git
