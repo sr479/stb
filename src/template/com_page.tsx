@@ -1,3 +1,7 @@
+/**
+ * 编写作者:
+ * 创建时间:
+ */
 import { React } from "../../framework/component/react";
 import { IPageProps, IPageState } from ".";
 
