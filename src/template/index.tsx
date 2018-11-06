@@ -1,3 +1,7 @@
+/**
+ * 编写作者:
+ * 创建时间:
+ */
 import "./index.less";
 import { BasePage, PageRegister } from "../../framework/component/page";
 import { ParseUrl } from "../../framework/basic/parseUrl";
