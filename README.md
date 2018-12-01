@@ -35,7 +35,8 @@ yarn start:ser
 ## 起步
 >>#### [我的第一个EPG程序（一）：初始化项目环境](https://github.com/442331311/stb/issues/3)
 >>#### [我的第一个EPG程序（二）：Hello EPG!](https://github.com/442331311/stb/issues/4)
->>#### [我的第一个EPG程序（三）：...]()
+>>#### [我的第一个EPG程序（三）：我的第一个EPG程序（三）：焦点管理](https://github.com/442331311/stb/issues/5)
+>>#### [我的第一个EPG程序（四）：...]()
 
 ## EPG开发记录
 #### EPG页面运行于IPTV平台，其特殊性导致相关开发技术与人员是小众群体，总结了以下开发记录可有效避免一些常规问题
